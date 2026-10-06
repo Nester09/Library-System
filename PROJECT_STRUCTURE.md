@@ -77,9 +77,6 @@ Library-System/
 │       ├── v2.9.3/popper.min.js
 │       └── v2.10.2/popper.min.js
 │
-├── uploads/
-│   └── .gitkeep
-│
 └── vendor/
     ├── autoload.php
     ├── composer/
@@ -97,7 +94,6 @@ Library-System/
 - `database/system.sql` - database structure and sample data for the system.
 - `assets/` - local Bootstrap, Bootstrap Icons, Font Awesome, jQuery and Popper files used by the project.
 - `vendor/` - Composer files and PHPMailer used for email functionality.
-- `uploads/` - local uploaded files if the application creates any. The folder is kept in Git with `.gitkeep`, while uploaded files are ignored.
 - `db.php` - database connection.
 - `dashboard.php` - user dashboard and book borrowing/returning interface.
 - `admin_dashboard.php` - administrator dashboard.

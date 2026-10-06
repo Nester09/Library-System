@@ -137,9 +137,6 @@ Library-System/
 │   ├── jquery/
 │   └── popperjs/
 │
-├── uploads/
-│   └── .gitkeep
-│
 └── vendor/
     └── phpmailer/
 
@@ -148,7 +145,6 @@ Library-System/
 
 * `database/system.sql` — database structure and sample data.
 * `assets/` — locally stored frontend libraries and assets.
-* `uploads/` — directory for files uploaded by the application.
 * `vendor/` — Composer dependencies, including PHPMailer.
 * `db.php` — database connection configuration.
 
@@ -351,7 +347,7 @@ For a public repository, avoid publishing real passwords or other sensitive cred
 
 * Database credentials are currently configured in `db.php` and should be moved to environment variables or another secure configuration mechanism before production deployment.
 * The application depends on a configured PHP/MySQL/MariaDB and web-server environment.
-* Email functionality requires valid SMTP configuration before it can be used successfully.
+* **Email configuration:** Password reset emails require Gmail SMTP credentials. Open `send_email.php` and replace the placeholder email and app password with your own Gmail address and Gmail App Password. If email is not configured, the rest of the system can still be tested, but password-reset emails will not be sent.
 * Some frontend libraries are stored locally in the repository, which increases repository size.
 * The database contains sample/test data and should be reviewed before using the system in a production environment.
 * Authentication and authorization should receive additional security hardening before production deployment.
